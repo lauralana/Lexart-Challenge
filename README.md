@@ -14,9 +14,11 @@
 <details>
 <summary><b> Database Challenge </b></summary> 
   Download the World database from the following link:
-<a hreaf="https://dev.mysql.com/doc/index-other.html">World-db</a> and import it into a database management system.
+  https://dev.mysql.com/doc/index-other.html and import it into a database management system.
 <br>
-  Create a table called "AverageLifeExpectancy" that will contain the following information:
+  Create a table called <i><b>"AverageLifeExpectancy"</i></b> that will contain the following information:
+ <br>
+ <br>
   <table> 
   <tr>
   <th>LifeProm</th>
@@ -36,7 +38,6 @@
   </tr>
   </table>
 </details>
-<br>
 
 ## Technologys :
 - JavaScript
