@@ -1,9 +1,10 @@
 DROP TABLE IF EXISTS 'AverageLifeExpectancy'
 
 CREATE TABLE AverageLifeExpectancy AS
-	(SELECT
+(SELECT
 	COALESCE(ROUND(AVG(country.LifeExpectancy)), 0) AS 'LifeProm',
-	  country.Region AS 'Region'
+	  country.Continent AS 'Region'
 	FROM country
-	GROUP BY country.Region)
-;
+    WHERE Continent IN ('South America','North America','Asia')
+	GROUP BY Continent 
+	ORDER BY Continent DESC);
